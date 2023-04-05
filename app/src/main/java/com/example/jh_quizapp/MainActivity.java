@@ -17,21 +17,10 @@ public class MainActivity extends AppCompatActivity {
         v1 = findViewById(R.id.layout);
     }
 
-    public void setFrag1(View v){
-        FragmentManager manager = getSupportFragmentManager();
-        FragmentTransaction ft = manager.beginTransaction();
-
-        ft.replace(R.id.frame_container, new Fragment1(), "one");
-        ft.commitAllowingStateLoss();
-    }
     public void setFrag2(View v){
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction ft = manager.beginTransaction();
-
         ft.replace(R.id.frame_container, new Fragment2(), "two");
         ft.commitAllowingStateLoss();
     }
-
-
-
 }
